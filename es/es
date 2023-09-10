@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="stylesheet" href="../css/halloween-theme.css">-->
+    <!--<link rel="stylesheet" href="../css/christmas-theme.css">-->
+    <link rel="canonical" href="es">
+    <title>Calculadora RollerCoin: Calcule con precisión sus ganancias de RollerCoin</title>
+    <meta name="description" content="Utilice la Calculadora RollerCoin para estimar sus ganancias de RollerCoin en el juego Rollercoin. Obtenga proyecciones precisas y manténgase actualizado sobre las tendencias del mercado. ¡Empiece a ganar ahora!">
+<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5K1H8D9BJ"></script> -->
+    <script src="../js/analytics/gtag.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="google-site-verification" content="Gl9pYnRf7L4DhB45mz04Y6Vq9tsLD2tXYDAi_oRi_jE">   
+    <meta property="og:title" content="Maximice sus ganancias de RollerCoin con la calculadora de RollerCoin">
+    <meta property="og:description" content="Obtenga una mejor idea de su potencial de ganancias de RollerCoin con la Calculadora de RollerCoin. Manténgase actualizado sobre las tendencias del mercado y tome decisiones informadas en el juego Rollercoin. ¡Empiece a maximizar sus ganancias ahora!">
+    <meta property="og:image" content="https://rollercoincalc.online/screenshot.png">
+    <meta property="og:url" content="https://rollercoincalc.online/">
+    <meta name="twitter:title" content="Maximice sus ganancias de RollerCoin con la calculadora de RollerCoin">
+    <meta name="twitter:description" content="Obtenga una mejor idea de su potencial de ganancias de RollerCoin con la Calculadora de RollerCoin. Manténgase actualizado sobre las tendencias del mercado y tome decisiones informadas en el juego Rollercoin. ¡Empiece a maximizar sus ganancias ahora!">
+    <meta name="twitter:image" content="https://rollercoincalc.online/screenshot.png">
+    <meta name="twitter:card" content="summary_large_image">
+<body id="index">
+    <header>
+        <h1>Calculadora ROLLERCOIN</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Calculadora</a></li>
+            <li><a href="pages/best-coins-to-mine.html">Monedas para minar</a></li>
+            <li><a href="pages/about.html">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <div class="form-content roller-section">
+                <h2>Calculator</h2>
+
+                <form action="">
+                    <div class="form-group">
+                        <label for="inputNetworkPower">Ingrese <span class="important">Potencia de la red</span> de la moneda deseada</label>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPower" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPower" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected="">EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputUserPower">Ingrese <span class="important">Su potencia</span> para la moneda deseada</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
+                            <select name="" id="selectUserPower" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s" selected="">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s">EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputBlockReward">Seleccione <span class="important">moneda deseada</span> y <span class="important">Recompensa por bloque</span></label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputBlockReward" name="inputBlockReward" class="roller-input-number">
+                            <select id="selectBlockReward" name="selectBlockReward" class="roller-select">
+                                <option value="BTC" selected="">BTC</option>
+                                <option value="DOGE">DOGE</option>
+                                <option value="ETH">ETH</option>
+                                <option value="BNB">BNB</option>
+                                <option value="MATIC">MATIC</option>
+                                <option value="SOL">SOL</option>
+                                <option value="RLT">RLT</option>
+                                <option value="RST">RST</option>
+                                <option value="TRX">TRX</option>
+                                <option value="LTC">LTC</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputTimePerBlock">Ingrese <span class="important">Tiempo por Bloque</span> De la Moneda Deseada</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputTimePerBlock" name="inputTimePerBlock" class="roller-input-number">
+                            <select id="selectTimePerBlock" name="selectTimePerBlock" class="roller-select">
+                                <option value="SECONDS" selected="">Segundos</option>
+                                <option value="MINUTES">Minutos</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input id="calculateButton" type="button" class="" value="Calcular">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="calculated-reward roller-section">
+                <h2>Results</h2>
+                <div class="table-responsive">
+                    <table class="roller-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <p>Resultados de recompensas</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Por bloque</p>
+                                </td>
+                                <td>
+                                    <p id="resultExpectedReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Diario</p>
+                                </td>
+                                <td>
+                                    <p id="resultDailyReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Semanal</p>
+                                </td>
+                                <td>
+                                    <p id="resultWeeklyReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Mensual</p>
+                                </td>
+                                <td>
+                                    <p id="resultMonthlyReward"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+
+                <div class="desired-coin">
+                    <div class="desired-coin-container">
+                        <div class="icon">
+                            <img id="coinIcon" src="../img/btc.svg" alt="Bitcoin">
+                        </div>
+                        <div class="title-text">
+                            <p id="coinName">Bitcoin</p>
+                            <p id="coinTicker">BTC</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="top-footer">
+            <div class="lang">
+                <ul class="">
+                    <li>
+                        <a href="../index.html">English</a>
+                    </li>
+                    <li>
+                        <a href="#">Español</a>
+                    </li>
+					<li>
+                        <a href="../pt/index.html">Português</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        
+        <section class="bottom-footer">
+            <h3>Term of service</h3>
+            <div class="legal">
+                <ul>
+                    <li><a href="">Términos de servicio</a></li>
+                </ul>
+            </div>
+            <p>Próximamente información adicional</p>
+        </section>
+    </footer>
+<script data-name="BMC-Widget" data-cfasync="false" src="../1.0.0/widget.prod.min.js" data-id="AsadSumbul" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <script src="../js/index.js" type="module"></script>
+</body>
+</head></html>

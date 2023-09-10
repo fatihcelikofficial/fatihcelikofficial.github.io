@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="./css/halloween-theme.css"> -->
+    <!-- <link rel="stylesheet" href="./css/christmas-theme.css"> -->
+    <link rel="canonical" href="index.htm">
+    <title>RCHesapla - RollerCoin Kişisel Kazım Gücünü Hesapla!</title>
+    <meta name="description" content="Rollercoin oyununda RollerCoin kazancınızı tahmin etmek için RollerCoin Hesaplayıcıyı kullanın. Doğru tahminler alın ve pazar trendleri hakkında güncel kalın. Şimdi kazanmaya başlayın!">
+<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5K1H8D9BJ"></script> -->
+    <script src="js/analytics/gtag.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="RollerCoin Hesaplayıcı ile RollerCoin Kazançlarınızı En Üst Düzeye Çıkarın">
+    <meta property="og:description" content="Get a better idea of your RollerCoin earnings potential with the RollerCoin Calculator. Stay updated on market trends and make informed decisions in the Rollercoin game. Start maximizing your earnings now!">
+    <meta property="og:image" content="https://rollercoincalc.online/screenshot.png">
+    <meta property="og:url" content="https://rollercoincalc.online/">
+    <meta name="twitter:title" content="Maximize Your RollerCoin Earnings with the RollerCoin Calculator">
+    <meta name="twitter:description" content="Get a better idea of your RollerCoin earnings potential with the RollerCoin Calculator. Stay updated on market trends and make informed decisions in the Rollercoin game. Start maximizing your earnings now!">
+    <meta name="twitter:image" content="https://rollercoincalc.online/screenshot.png">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body id="index">
+    <header>
+        <h1>ROLLERCOIN Calculator</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Calculator</a></li>
+            <li><a href="pages/best-coins-to-mine.html">coins to mine</a></li>
+            <li><a href="pages/about.html">about</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            
+            <div class="form-content roller-section">
+                <b><h2>Maximize Your Earnings with the RollerCoin Calculator</h2></b><br><br>
+                 <p>
+                        Join the exciting world of bitcoin mining with RollerCoin, the online simulator game where you can earn real bitcoins. The RollerCoin Calculator makes it easy to estimate your potential earnings by allowing you to input your hash rate and electricity cost. With just a few clicks, you'll receive an instant calculation of your expected income. Don't wait - start mining virtual bitcoins today and see the power of the RollerCoin Calculator in action. Unleash the full potential of your mining rig and experience the thrill of earning real bitcoins in the virtual world.</p><br><br>
+                <form action="">
+                    <div class="form-group">
+                        <label for="inputNetworkPower">Enter <span class="important">Network Power</span> For Desired Coin</label>
+                        <div class="roller-input-group">
+                            <input id="inputNetworkPower" type="number" name="inputNetworkPower" class="roller-input-number">
+                            <select id="selectNetworkPower" name="" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s" selected="">EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputUserPower">Enter <span class="important">Your</span> Desired Goal Power</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputUserPower" name="inputUserPower" class="roller-input-number">
+                            <select name="" id="selectUserPower" class="roller-select">
+                                <option value="GH/s">GH/s</option>
+                                <option value="TH/s" selected="">TH/s</option>
+                                <option value="PH/s">PH/s</option>
+                                <option value="EH/s">EH/s</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputBlockReward">Enter <span class="important">Block Reward</span> For Desired Coin</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputBlockReward" name="inputBlockReward" class="roller-input-number">
+                            <select id="selectBlockReward" name="selectBlockReward" class="roller-select">
+                                <option value="BTC" selected="">BTC</option>
+                                <option value="DOGE">DOGE</option>
+                                <option value="ETH">ETH</option>
+                                <option value="BNB">BNB</option>
+                                <option value="MATIC">MATIC</option>
+                                <option value="SOL">SOL</option>
+                                <option value="RLT">RLT</option>
+                                <option value="RST">RST</option>
+                                <option value="TRX">TRX</option>
+                                <option value="LTC">LTC</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputTimePerBlock">Enter <span class="important">Block Timer</span> For Desired Coin</label>
+                        <div class="roller-input-group">
+                            <input type="number" id="inputTimePerBlock" name="inputTimePerBlock" class="roller-input-number">
+                            <select id="selectTimePerBlock" name="selectTimePerBlock" class="roller-select">
+                                <option value="SECONDS" selected="">Seconds</option>
+                                <option value="MINUTES">Minutes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="btn-submit-container">
+                        <div class="tree-dimensional-button btn-default">
+                            <input id="calculateButton" type="button" class="" value="Calculate">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="calculated-reward roller-section">
+                <div class="table-responsive">
+                    <table class="roller-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    <p>Calculated Reward</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Expected</p>
+                                </td>
+                                <td>
+                                    <p id="resultExpectedReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Daily</p>
+                                </td>
+                                <td>
+                                    <p id="resultDailyReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Weekly</p>
+                                </td>
+                                <td>
+                                    <p id="resultWeeklyReward"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Monthly</p>
+                                </td>
+                                <td>
+                                    <p id="resultMonthlyReward"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+
+                <div class="desired-coin">
+                    <div class="desired-coin-container">
+                        <div class="icon">
+                            <img id="coinIcon" src="img/btc.svg" alt="Bitcoin">
+                        </div>
+                        <div class="title-text">
+                            <p id="coinName">Bitcoin</p>
+                            <p id="coinTicker">BTC</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="asad">
+        <h2>How It Works?</h2><br>
+        <p>Discover Your Potential Earnings in Three Simple Steps </p><br>
+<ol>
+           <li>Input Your Hash Rate: Enter the hash rate of your mining rig in the calculator. The hash rate is a measure of the processing power of your rig and is usually measured in hashes per second.</li>
+            
+           <li>Enter Your Electricity Cost: The next step is to enter the cost of electricity per kilowatt-hour (kWh) that you pay. This information is necessary to accurately calculate your potential earnings.</li>
+            
+           <li>Get Your Results: With just two simple inputs, the RollerCoin Calculator will instantly show you an estimate of your potential earnings. You can easily compare the results with different hash rates and electricity cost values to see how changes in these parameters affect your earnings.</li><br>
+            
+           It's that simple! The RollerCoin profit calculator takes the guesswork out of estimating your potential earnings and helps you make informed decisions about your mining rig. Start mining virtual bitcoins today and see how the RollerCoin Calculator can help you maximize your earnings.</ol><br><br>
+           <h1>Frequently Asked Questions</h1><br>
+           <h2>How Much Can I Earn From RollerCoin?</h2>
+           <p>The earning potential of the blockchain-based online game Rollercoin is influenced by a number of variables, including your level of activity, the difficulty of the missions you complete, and the market value of the cryptocurrency you earn. 
+            
+            It's crucial to remember that earning cryptocurrency through games like Rollercoin is subject to market volatility, and your earnings may change drastically. As a result, earning bitcoin through gaming should only be done for fun or as a hobby rather than as a sustainable source of revenue.</p>
+        <br><br>
+        
+        <h2>What is the Best Coin to Mine in Rollercoin?</h2>
+        <p>
+            Players mine "RollerCoin," a form of virtual cash, in Rollercoin (RC). The rewards for mining and the difficulty of mining are subject to a number of variables, including game design and market forces, and can alter over time. As a result, choosing the ideal coin to mine in Rollercoin is challenging. It is advised to think of earning virtual money with Rollercoin as a fun way to perhaps earn more virtual money, rather than as a surefire way to make money.
+        </p>
+        
+        <br><br>
+        <h2>What is the Minimum Withdrawal Amount for RollerCoin in Rollercoin?</h2>
+        <p>
+            The minimum withdrawal amount for RollerCoin, the virtual currency earned in the Rollercoin game, may vary and is subject to change. For the most up-to-date information on the minimum withdrawal amount, it is recommended to check the Rollercoin website or contact their support team. Note that virtual currencies, including RollerCoin, can be highly volatile and their value can fluctuate rapidly. It's important to view earning virtual currency through Rollercoin as a leisure or entertainment activity rather than a reliable source of income.
+        </p>
+        </div>
+            
+
+    <footer>
+        <section class="top-footer">
+            <div class="lang">
+                <ul class="">
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="es/index.html">Español</a>
+                    </li>
+					<li>
+                        <a href="pt/index.html">Português</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        
+        <section class="bottom-footer">
+            <div class="legal">
+                <ul>
+                    <li><a href="pages/tos.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <p>Copyright © 2023 RollerCoin Calculator. All rights reserved.            </p>
+        </section>
+    </footer>
+
+    <script src="js/index.js" type="module"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "How Much Can I Earn From RollerCoin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The earning potential of the blockchain-based online game Rollercoin is influenced by a number of variables, including your level of activity, the difficulty of the missions you complete, and the market value of the cryptocurrency you earn. It's crucial to remember that earning cryptocurrency through games like Rollercoin is subject to market volatility, and your earnings may change drastically. As a result, earning bitcoin through gaming should only be done for fun or as a hobby rather than as a sustainable source of revenue."
+            }
+          },{
+            "@type": "Question",
+            "name": "What is the Best Coin to Mine in Rollercoin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Players mine \"RollerCoin,\" a form of virtual cash, in Rollercoin (RC). The rewards for mining and the difficulty of mining are subject to a number of variables, including game design and market forces, and can alter over time. As a result, choosing the ideal coin to mine in Rollercoin is challenging. It is advised to think of earning virtual money with Rollercoin as a fun way to perhaps earn more virtual money, rather than as a surefire way to make money."
+            }
+          },{
+            "@type": "Question",
+            "name": "What is the Minimum Withdrawal Amount for RollerCoin in Rollercoin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The minimum withdrawal amount for RollerCoin, the virtual currency earned in the Rollercoin game, may vary and is subject to change. For the most up-to-date information on the minimum withdrawal amount, it is recommended to check the Rollercoin website or contact their support team. Note that virtual currencies, including RollerCoin, can be highly volatile and their value can fluctuate rapidly. It's important to view earning virtual currency through Rollercoin as a leisure or entertainment activity rather than a reliable source of income."
+            }
+          }]
+        }
+        </script>
+	<script data-name="BMC-Widget" data-cfasync="false" src="1.0.0/widget.prod.min.js" data-id="AsadSumbul" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>
